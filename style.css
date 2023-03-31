@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --color-light-blue: #49a6ea;
+}
+
+::selection {
+    visibility: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-contenair {
+    background-color: #ffffff;
+    padding: 1em 2em;
+    width: 28%;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.box-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.box-name {
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.box-job {
+    text-transform: uppercase;
+    color: var(--color-light-blue);
+    font-size: 14px;
+}
+
+.box-text {
+    text-align: justify;
+    color: #777777;
+    margin: 8px auto;
+}
+
+.box-arrow {
+    display: flex;
+}
+
+.arrow {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    fill: var(--color-light-blue);
+    opacity: 0.8;
+}
+
+.arrow svg {
+    pointer-events: none;
+}
+
+.box-button {
+    border: 1px solid var(--color-light-blue);
+    border-radius: 5px;
+    background-color: rgb(73 166 234 / 5%);
+    color: var(--color-light-blue);
+    padding: 3px 7px;
+    cursor: pointer;
+}
